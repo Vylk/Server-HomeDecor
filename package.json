@@ -1,0 +1,26 @@
+{
+  "name": "server-homedecor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "pm2": "^5.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vylk/Server-HomeDecor.git"
+  },
+  "type": "module",
+  "author": "Vylk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vylk/Server-HomeDecor/issues"
+  },
+  "homepage": "https://github.com/Vylk/Server-HomeDecor#readme"
+}
