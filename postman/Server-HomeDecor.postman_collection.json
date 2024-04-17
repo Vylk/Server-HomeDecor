@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "49e6d04e-2f75-493a-80ef-7ffd56d1fe31",
+		"name": "Server-HomeDecor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "19660250"
+	},
+	"item": [
+		{
+			"name": "Check Server Live",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{dev-server}}/status"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Process",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userid\" : \"1127814149670006dfa2\",\n    \"auth_code\": \"ya29.a0Ad52N386hKykLTOdH9APcKxyWk8dkq8WbdQOhOOHbs0NezI0LiMrrTuKufcKV3xaMHGhqKyR37AOhB-3YHPq6HlPOuSHpmaZs15OPAaokAR6SowKqR7AbZV95cjh2pNm2n2mRfOk_BeStoQChEkg_zVcKshyDDu3ERfvaCgYKAasSARMSFQHGX2Mi7tOdwFZxNHQccHQMSMcjYQ0171\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{dev-server}}/api/getprocess"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Process",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userid\" : \"9a9ad1fd23795a2c2ad4\",\n    \"auth_code\": \"ya29.a0Ad52N384S7fh8VnpFtnWV3-3Qk2f19ommyIrwyLAbAfTzxMWxvSbVOxCMQ33NpQOZaqgkkG5LONgyYbtdU2bnilIO4OMzqNS4fq-zy74HUU7Czhh07mcY6JLpJlkAqj1fTz2PD87ANuMHJ9649UTAzq47OQPSGcAn5caCgYKAVUSARESFQHGX2MiDsNR2iC_UEjH9_w3TD8Fgg0170\",\n    \"data\": {\n            \"level\": 5,\n            \"score\": 6\n        }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{dev-server}}/api/updateprocess"
+			},
+			"response": []
+		}
+	]
+}
